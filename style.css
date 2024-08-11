@@ -9,7 +9,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--bg-color);
-
     color: var(--font-color);
     font-size: 120%;
 }
@@ -43,6 +42,9 @@ h1 {
     background-image: -webkit-linear-gradient(60deg, var(--primary-color), var(--secondary-color));
     background-clip: text;
     color: transparent;
+}
+#about .section-heading {
+    margin-bottom: 0;
 }
 
 /* Main navigation */
@@ -79,6 +81,46 @@ li.navbar__item svg {
 }
 li.navbar__item:hover svg {
     fill: var(--primary-color);
+}
+
+@media screen and (max-width: 950px) {
+    header {
+        padding-bottom: 0;
+    }
+    .navbar__site-links {
+        display: none;
+    }
+    .hero__image {
+        display: none;
+    }
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .section-heading {
+        text-align: center;
+    }
+    section {
+        margin: 1rem 0 4rem 0;
+    }
+    section#skills {
+        text-align: center;
+    }
+    section#contact {
+        text-align: center;
+    }
+    .contact__box {
+        justify-content: center !important;
+        flex-wrap: wrap;
+    }
+    .skillbox {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .project__image {
+        display: none;
+    }
 }
 
 /* Hero section */
@@ -141,7 +183,7 @@ li.navbar__item:hover svg {
     color: var(--primary-color);
     border-radius: 5px;
     padding: 0.5rem 1rem;
-    margin-right: 0.9rem;
+    margin: 0 0.9rem 1rem 0;
 }
 
 .skill:hover {
