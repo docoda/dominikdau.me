@@ -223,3 +223,40 @@ footer {
     padding: 1rem;
     color: white;
 }
+.section-imprint {
+    text-align: center;
+}
+.imprint-list {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.imprint-list li {
+    margin: 0.5rem 0;
+}
+.imprint-list li a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+.imprint-list li a:hover {
+    text-decoration: underline;
+}
+.imprint-link {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+.imprint-link:hover {
+    text-decoration: underline;
+}
+.imprint-backlink {
+    background-color: var(--bg-secondary-color);
+    padding: 1rem 2rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    border-radius: 5px;
+}
+.imprint-backlink:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
