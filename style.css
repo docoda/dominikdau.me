@@ -90,13 +90,16 @@ li.navbar__item:hover svg {
     .navbar__site-links {
         display: none;
     }
-    .hero__image {
-        display: none;
+    .hero {
+        flex-direction: column;
     }
     .about-container {
         flex-direction: column;
         text-align: center;
         align-items: center;
+    }
+    .about__card {
+        width: 50ch !important;
     }
     .section-heading {
         text-align: center;
@@ -143,7 +146,7 @@ li.navbar__item:hover svg {
 
 .hero__image img {
     width: 300px;
-    height: 40%;
+    /* height: 40%; */
     margin: 20px;
     box-shadow: #3d3d3d 0px 0px 50px;
     border-radius: 5px;
@@ -217,6 +220,9 @@ li.navbar__item:hover svg {
 }
 
 .live-link {
+    margin-top: 2rem;
+}
+.live-link a {
     font-size: 1.3rem;
     background-color: var(--primary-color);
     text-decoration: none;
@@ -226,7 +232,7 @@ li.navbar__item:hover svg {
     border-radius: 5px;
     cursor: pointer;
 }
-.live-link:hover {
+.live-link a:hover {
     background-color: var(--secondary-color);
 }
 
