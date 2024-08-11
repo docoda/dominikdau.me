@@ -10,7 +10,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--bg-color);
     color: var(--font-color);
-    font-size: 120%;
+    font-size: 110%;
 }
 
 header {
@@ -81,49 +81,6 @@ li.navbar__item svg {
 }
 li.navbar__item:hover svg {
     fill: var(--primary-color);
-}
-
-@media screen and (max-width: 950px) {
-    header {
-        padding-bottom: 0;
-    }
-    .navbar__site-links {
-        display: none;
-    }
-    .hero {
-        flex-direction: column;
-    }
-    .about-container {
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-    }
-    .about__card {
-        width: 50ch !important;
-    }
-    .section-heading {
-        text-align: center;
-    }
-    section {
-        margin: 1rem 0 4rem 0;
-    }
-    section#skills {
-        text-align: center;
-    }
-    section#contact {
-        text-align: center;
-    }
-    .contact__box {
-        justify-content: center !important;
-        flex-wrap: wrap;
-    }
-    .skillbox {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .project__image {
-        display: none;
-    }
 }
 
 /* Hero section */
