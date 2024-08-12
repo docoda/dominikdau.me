@@ -4,6 +4,7 @@
     --font-color: #e1e1ff;
     --bg-color: #191919;
     --bg-secondary-color: #333;
+    --border-radius: 5px;
 }
 
 body {
@@ -106,7 +107,7 @@ li.navbar__item:hover svg {
     /* height: 40%; */
     margin: 20px;
     box-shadow: #3d3d3d 0px 0px 50px;
-    border-radius: 5px;
+    border-radius: var(--border-radius);
 }
 .cursor-blinker {
     animation: blink 1.5s step-end infinite;
@@ -141,7 +142,7 @@ li.navbar__item:hover svg {
 .skill {
     background-color: var(--bg-secondary-color);
     color: var(--primary-color);
-    border-radius: 5px;
+    border-radius: var(--border-radius);
     padding: 0.5rem 1rem;
     margin: 0 0.9rem 1rem 0;
 }
@@ -159,14 +160,14 @@ li.navbar__item:hover svg {
 }
 .project:hover {
     background-color: var(--bg-secondary-color);
-    border-radius: 5px;
+    border-radius: var(--border-radius);
 }
 .project__image {
     margin: 0 1rem;
 }
 .project__image img{
     width: 400px;
-    border-radius: 5px;
+    border-radius: var(--border-radius);
 }
 .project__textbox {
     padding: 1rem 3rem;
@@ -186,7 +187,7 @@ li.navbar__item:hover svg {
     color: white;
     border: none;
     padding: 0.5rem 1rem;
-    border-radius: 5px;
+    border-radius: var(--border-radius);
     cursor: pointer;
 }
 .live-link a:hover {
@@ -210,7 +211,7 @@ li.navbar__item:hover svg {
 }
 .contact__box div a {
     padding: 1rem 1.5rem;
-    border-radius: 5px;
+    border-radius: var(--border-radius);
     font-size: 1.5rem;
     color: white;
     text-decoration: none;
@@ -259,7 +260,7 @@ footer {
     padding: 1rem 2rem;
     color: var(--primary-color);
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: var(--border-radius);
 }
 .imprint-backlink:hover {
     background-color: var(--primary-color);
