@@ -5,7 +5,8 @@
     .navbar__site-links {
         display: none;
     }
-    .hero {
+    #hero {
+        margin-top: 0.5rem;
         flex-direction: column;
     }
     .about-container {
@@ -31,6 +32,9 @@
     .contact__box {
         justify-content: center;
         flex-wrap: wrap;
+    }
+    #skills {
+        background-image: none;
     }
     .skillbox {
         flex-wrap: wrap;

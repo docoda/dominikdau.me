@@ -2,13 +2,15 @@
     --primary-color: #ff408b;
     --secondary-color: #ff714e;
     --font-color: #e1e1ff;
+    --font-color-secondary: #ddd;
     --bg-color: #191919;
     --bg-secondary-color: #333;
     --border-radius: 5px;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Switzer-Variable, Verdana, Arial, Helvetica, sans-serif;
+    line-height: 150%;
     background-color: var(--bg-color);
     color: var(--font-color);
     font-size: 110%;
@@ -16,7 +18,7 @@ body {
 
 header {
     padding-bottom: 2rem;
-    background-image: url("img/line.svg");
+    background-image: url("../img/line.svg");
     background-repeat: no-repeat;
     box-shadow: 0 0px 20px 30px var(--bg-color) inset;
 }
@@ -37,15 +39,13 @@ h1 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    line-height: 110%;
 }
 .section-heading {
     font-size: 2rem;
     background-image: -webkit-linear-gradient(60deg, var(--primary-color), var(--secondary-color));
     background-clip: text;
     color: transparent;
-}
-#about .section-heading {
-    margin-bottom: 0;
 }
 
 /* Main navigation */
@@ -62,7 +62,6 @@ nav.navbar ul {
     display: flex;
     align-items: center;
 }
-
 
 li.navbar__item {
     padding: 0 1rem;
@@ -86,17 +85,24 @@ li.navbar__item:hover svg {
 
 /* Hero section */
 
-.hero {
+#hero {
+    margin-top: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .hero__textbox {
+    font-family: Switzer-Light;
+    font-size: 1.5rem;
+    color: var(--font-color-secondary);
     text-align: center;
     width: 45ch;
 }
-.hero__textbox h2 {
+.hero__textbox .hero__heading {
+    font-size: 2.3rem;
+    font-family: Switzer-Medium;
+    line-height: 110%;
     color: var(--primary-color);
     font-size: 2rem;
     margin-bottom: 1rem;
@@ -104,7 +110,6 @@ li.navbar__item:hover svg {
 
 .hero__image img {
     width: 300px;
-    /* height: 40%; */
     margin: 20px;
     box-shadow: #3d3d3d 0px 0px 50px;
     border-radius: var(--border-radius);
@@ -123,22 +128,34 @@ li.navbar__item:hover svg {
 
 /* Section About */
 
+#about {
+    margin-top: 1rem;
+}
+#about .section-heading {
+    margin-bottom: 0;
+}
 .about-container {
     display: flex;
 }
-
 .about__card {
+    color: var(--font-color-secondary);
     width: 40ch;
     padding: 1rem;
 }
+.about__card h3 {
+    color: var(--font-color)
+}
 
 /* Section Skills */
-
+#skills {
+    background-image: url("../img/circuit.svg");
+    background-repeat: no-repeat;
+    background-position: right 43% bottom 40%;
+}
 .skillbox {
     display: flex;
     margin: 1rem 0;
 }
-
 .skill {
     background-color: var(--bg-secondary-color);
     color: var(--primary-color);
@@ -146,7 +163,6 @@ li.navbar__item:hover svg {
     padding: 0.5rem 1rem;
     margin: 0 0.9rem 1rem 0;
 }
-
 .skill:hover {
     background-color: var(--primary-color);
     color: white;
@@ -175,6 +191,10 @@ li.navbar__item:hover svg {
 .project__textbox h3 {
     font-size: 2rem;
     margin-top: 0rem;
+    line-height: 120%;
+}
+.project__textbox p {
+    color: var(--font-color-secondary);
 }
 
 .live-link {
@@ -227,7 +247,7 @@ li.navbar__item:hover svg {
 footer {
     text-align: center;
     padding: 1rem;
-    color: white;
+    color: var(--font-color-secondary);
 }
 .section-imprint {
     text-align: center;
