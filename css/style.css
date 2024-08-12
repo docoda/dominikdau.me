@@ -10,7 +10,7 @@
 
 body {
     font-family: Switzer-Variable, Verdana, Arial, Helvetica, sans-serif;
-    line-height: 150%;
+    line-height: 160%;
     background-color: var(--bg-color);
     color: var(--font-color);
     font-size: 110%;
@@ -109,7 +109,7 @@ li.navbar__item:hover svg {
 .hero__heading div:last-child {
     margin-top: 1rem;
     line-height: 120%;
-    font-family: Switzer-Light;
+    font-family: Switzer-Extralight;
     font-size: 1.5rem;
     color: var(--font-color-secondary);
     width: 40ch;
