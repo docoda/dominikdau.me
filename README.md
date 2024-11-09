@@ -1,0 +1,1 @@
+To view my portfolio website, please download this repository and launch `index.html` in your browser.

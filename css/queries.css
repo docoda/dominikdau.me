@@ -1,0 +1,73 @@
+@media screen and (max-width: 950px) {
+    header {
+        padding-bottom: 0;
+    }
+    .navbar__site-links {
+        display: none;
+    }
+    #hero {
+        margin-top: 0.5rem;
+        flex-direction: column;
+    }
+    .hero__heading div:last-child {
+        width: 100%;
+    }
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .about__card {
+        width: 50ch;
+    }
+    .section-heading {
+        text-align: center;
+    }
+    section {
+        margin: 1rem 0 4rem 0;
+    }
+    section#skills {
+        text-align: center;
+    }
+    section#contact {
+        text-align: center;
+    }
+    .contact__box {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    #skills {
+        background-image: none;
+    }
+    .skillbox {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .project__image {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center !important;
+        justify-content: center;
+    }
+    .navbar__left h1 {
+        margin-bottom: 1rem;
+    }
+    .navbar__right ul {
+        margin: 1rem 0 1rem 0;
+        padding: 0;
+    }
+    .hero__textbox {
+        width: 100%;
+    }
+    .about__card {
+        width: 100%;
+    }
+    .project__textbox {
+        padding: 0.2rem;
+    }
+}
